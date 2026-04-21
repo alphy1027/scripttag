@@ -13,7 +13,7 @@ export default function ServiceCard({
   return (
     <div className={cn("card", active && "bg-primary")}>
       <H5 className={cn("", active && "text-primary-foreground")}>{title}</H5>
-      <P className={cn("text-sm text-muted-foreground", active && "text-muted opacity-70")}>{children}</P>
+      <P className={cn("text-muted-foreground", active && "text-muted opacity-70")}>{children}</P>
     </div>
   );
 }

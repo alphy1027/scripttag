@@ -2,7 +2,7 @@ export const process = [
   {
     id: 1,
     title: "Tell us what you need",
-    description: "We start by understanding your business, your goals, and what you want your website to achieve.",
+    description: "We understand your business, your goals, and what you want your website to achieve.",
   },
   {
     id: 2,

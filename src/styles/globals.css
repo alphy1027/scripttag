@@ -132,29 +132,29 @@
   h4,
   h5,
   h6 {
-    @apply font-secondary font-semibold text-primary;
+    @apply font-secondary text-primary;
   }
 
   h1 {
-    @apply text-heading-lg;
+    @apply text-heading-lg font-bold;
   }
   h2 {
-    @apply text-heading-base;
+    @apply text-heading-base font-bold;
   }
   h3 {
-    @apply text-heading-sm;
+    @apply text-heading-sm font-semibold;
   }
   h4 {
-    @apply text-heading-xs;
+    @apply text-heading-xs font-semibold;
   }
   h5 {
-    @apply text-heading-xxs;
+    @apply text-heading-xxs font-semibold;
   }
 }
 
 @layer components {
   .card {
-    @apply flex flex-col justify-between w-55 h-60 gap-4 px-6 py-8 border border-border;
+    @apply flex flex-col justify-between w-60 sm:w-55 h-64 gap-4 px-6 py-8 border border-border;
   }
 }
 

@@ -29,7 +29,7 @@ interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "Scripttag Dev",
+  name: "ScriptTag Dev",
   description: "Building web for the future",
   siteUrl: process.env.SITE_URL || "http://localhost:3000",
   contact: {

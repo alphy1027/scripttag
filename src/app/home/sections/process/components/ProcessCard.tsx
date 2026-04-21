@@ -4,10 +4,10 @@ export default function ProcessCard({ children, title, order }: { children: stri
   return (
     <div className="card">
       <div className="flex flex-col gap-1">
-        <P className="font-secondary font-extrabold text-xl text-muted-foreground">{`0${order}`}</P>
+        <P className="font-secondary font-extrabold text-2xl text-muted-foreground">{`0${order}`}</P>
         <H5>{title}</H5>
       </div>
-      <P className="text-sm text-muted-foreground">{children}</P>
+      <P className="text-muted-foreground">{children}</P>
     </div>
   );
 }
