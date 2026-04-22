@@ -7,7 +7,7 @@ import PinterestIcon from "../layout/icons/PinterestIcon";
 
 export default function SocialIcons() {
   return (
-    <section className="flex items-center gap-5">
+    <section className="flex items-center gap-5 opacity-80">
       <IconLink href={siteConfig.socialLinks.twitter}>
         <TwitterIcon />
       </IconLink>

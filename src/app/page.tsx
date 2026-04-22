@@ -10,6 +10,7 @@ import HeroSection from "./home/sections/hero/HeroSection";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import TrackingPoints from "./home/sections/tracking-points/TrackingPoints";
+import FaqSection from "./home/sections/faq/FaqSection";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
           <WorkingProcess />
           <ContactForm />
           <ContactInfo />
+          <FaqSection />
           <ActionSection />
         </PageWrapper>
       </main>
