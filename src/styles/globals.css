@@ -150,6 +150,10 @@
   h5 {
     @apply text-heading-xxs font-semibold;
   }
+
+  a {
+    @apply hover:scale-105 active:scale-95 duration-300 ease-in-out;
+  }
 }
 
 @layer components {

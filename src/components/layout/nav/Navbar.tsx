@@ -1,9 +1,9 @@
 import NavLink from "./components/NavLink";
 
 export const navLinks = [
-  { to: "/services", label: "Services" },
-  { to: "/process", label: "Process" },
-  { to: "/contact", label: "Contact us" },
+  { to: "services", label: "Services" },
+  { to: "process", label: "Process" },
+  { to: "contact", label: "Contact us" },
 ];
 
 export default function Navbar() {

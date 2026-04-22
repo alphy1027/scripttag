@@ -11,6 +11,8 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import TrackingPoints from "./home/sections/tracking-points/TrackingPoints";
 import FaqSection from "./home/sections/faq/FaqSection";
+import { faqSchema, servicesSchema } from "./home/sections/json-ld/json-ld-data";
+import { JsonLd } from "@/components/shared/JsonLd";
 
 export default function Home() {
   return (
@@ -19,7 +21,7 @@ export default function Home() {
         <Header />
         <HeroSection />
       </div>
-      <main className="flex-1 my-10">
+      <main className="flex-1 my-14">
         <PageWrapper>
           <TrackingPoints />
           <ValuePoint />
@@ -33,6 +35,11 @@ export default function Home() {
         </PageWrapper>
       </main>
       <Footer />
+
+      {/* FAQ */}
+      <JsonLd data={faqSchema} />
+      {/* Services */}
+      <JsonLd data={servicesSchema} />
     </>
   );
 }

@@ -40,7 +40,7 @@ export default function ContactForm() {
   };
 
   return (
-    <SectionWrapper>
+    <SectionWrapper id="#contact">
       <div className="w-full mx-auto max-w-md">
         <form onSubmit={handleSubmit(onSubmit)}>
           <FieldGroup>

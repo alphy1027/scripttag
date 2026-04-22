@@ -9,14 +9,8 @@ type SEOProps = {
   keywords?: string[];
 };
 
-export function generateSEO({
-  title,
-  description,
-  image,
-  url,
-  keywords,
-}: SEOProps = {}): Metadata {
-  const seoTitle = title ? `${title} | ${siteConfig.name}` : siteConfig.name;
+export function generateSEO({ title, description, image, url, keywords }: SEOProps = {}): Metadata {
+  const seoTitle = title ? `${siteConfig.name} | ${title}` : siteConfig.name;
   const seoDescription = description ?? siteConfig.description;
   const seoImage = image ?? siteConfig.ogImage;
   const seoUrl = url ? `${siteConfig.siteUrl}${url}` : siteConfig.siteUrl;
@@ -26,6 +20,8 @@ export function generateSEO({
     title: seoTitle,
     description: seoDescription,
     keywords: keywords ?? [],
+    authors: [{ name: siteConfig.name }],
+    creator: siteConfig.name,
     alternates: {
       canonical: url ?? "/",
     },
@@ -42,7 +38,7 @@ export function generateSEO({
           alt: siteConfig.name,
         },
       ],
-      locale: "en_US",
+      locale: "en_KE",
       type: "website",
     },
     twitter: {

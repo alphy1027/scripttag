@@ -25,11 +25,12 @@ interface SiteConfig {
     instagram: string;
     pinterest: string;
     tiktok: string;
+    github: string;
   };
 }
 
 export const siteConfig: SiteConfig = {
-  name: "ScriptTag Dev",
+  name: "ScriptTag",
   description: "Building web for the future",
   siteUrl: process.env.SITE_URL || "http://localhost:3000",
   contact: {
@@ -55,5 +56,6 @@ export const siteConfig: SiteConfig = {
     pinterest: "https://pinterest.com/scripttag",
     instagram: "https://instagram.com/scripttag",
     tiktok: "https://www.tiktok.com/@scripttag",
+    github: "https://www.github.com/scripttag",
   },
 };

@@ -8,10 +8,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: "yearly",
+      changeFrequency: "monthly",
       priority: 1,
     },
-    {
+    /* {
       url: `${baseUrl}/products`,
       lastModified: new Date(),
       changeFrequency: "yearly",
@@ -34,6 +34,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.5,
-    },
+    }, */
   ];
 }

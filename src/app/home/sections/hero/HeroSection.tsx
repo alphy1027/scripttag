@@ -13,7 +13,16 @@ export default function HeroSection() {
             We design and develop fast, modern, and mobile-friendly websites for small and growing businesses in
             Nairobi.
           </P>
-          <Button variant="secondary">Plan your website</Button>
+          <div className="flex items-center gap-4 sm:gap-6">
+            <Button variant="secondary">Plan your website</Button>
+
+            <a
+              href="#services"
+              className="border border-secondary text-secondary bg-transparent py-3 px-6 font-semibold"
+            >
+              Our Services
+            </a>
+          </div>
         </div>
         <HeroIcon />
       </SectionWrapper>
