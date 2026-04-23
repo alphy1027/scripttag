@@ -40,55 +40,57 @@ export default function ContactForm() {
   };
 
   return (
-    <SectionWrapper id="#contact">
-      <div className="w-full mx-auto max-w-md">
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <FieldGroup>
-            <FieldSet>
-              <FieldLegend className="font-bold ">
-                <SectionHeading>Get in touch</SectionHeading>
-              </FieldLegend>
-              <FieldDescription>Send us a message and we'll get back to you as soon as possible</FieldDescription>
-              {errors.root && <p className="text-lg font-semibold text-red-500">{errors.root.message}</p>}
-              <FieldGroup className="gap-4">
-                <Field>
-                  <FieldLabel htmlFor="name">Full Name</FieldLabel>
-                  <Input id="name" placeholder="Enter fullname" {...register("name", { required: true })} />
-                  {errors.name && <FieldError>{errors.name.message}</FieldError>}
-                </Field>
+    <section id="contact">
+      <SectionWrapper>
+        <div className="w-full mx-auto max-w-md">
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <FieldGroup>
+              <FieldSet>
+                <FieldLegend className="font-bold ">
+                  <SectionHeading>Get in touch</SectionHeading>
+                </FieldLegend>
+                <FieldDescription>Send us a message and we'll get back to you as soon as possible</FieldDescription>
+                {errors.root && <p className="text-lg font-semibold text-red-500">{errors.root.message}</p>}
+                <FieldGroup className="gap-4">
+                  <Field>
+                    <FieldLabel htmlFor="name">Full Name</FieldLabel>
+                    <Input id="name" placeholder="Enter fullname" {...register("name", { required: true })} />
+                    {errors.name && <FieldError>{errors.name.message}</FieldError>}
+                  </Field>
 
-                <Field>
-                  <FieldLabel htmlFor="email">Email</FieldLabel>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="you@example.com"
-                    {...register("email", { required: true })}
-                  />
-                  {errors.email && <FieldError>{errors.email.message}</FieldError>}
-                </Field>
+                  <Field>
+                    <FieldLabel htmlFor="email">Email</FieldLabel>
+                    <Input
+                      id="email"
+                      type="email"
+                      placeholder="you@example.com"
+                      {...register("email", { required: true })}
+                    />
+                    {errors.email && <FieldError>{errors.email.message}</FieldError>}
+                  </Field>
 
-                <Field>
-                  <FieldLabel htmlFor="message">Message</FieldLabel>
-                  <Textarea
-                    id="message"
-                    placeholder="Enter you message"
-                    className="resize-none"
-                    {...register("message", { required: true })}
-                  />
-                  {errors.message && <FieldError>{errors.message.message}</FieldError>}
-                </Field>
-              </FieldGroup>
-            </FieldSet>
+                  <Field>
+                    <FieldLabel htmlFor="message">Message</FieldLabel>
+                    <Textarea
+                      id="message"
+                      placeholder="Enter you message"
+                      className="resize-none"
+                      {...register("message", { required: true })}
+                    />
+                    {errors.message && <FieldError>{errors.message.message}</FieldError>}
+                  </Field>
+                </FieldGroup>
+              </FieldSet>
 
-            <Field orientation="horizontal" className="justify-end">
-              <Button type="submit" disabled={isSubmitting}>
-                {isSubmitting ? "Submitting..." : "Submit"}
-              </Button>
-            </Field>
-          </FieldGroup>
-        </form>
-      </div>
-    </SectionWrapper>
+              <Field orientation="horizontal" className="justify-end">
+                <Button type="submit" disabled={isSubmitting}>
+                  {isSubmitting ? "Submitting..." : "Submit"}
+                </Button>
+              </Field>
+            </FieldGroup>
+          </form>
+        </div>
+      </SectionWrapper>
+    </section>
   );
 }

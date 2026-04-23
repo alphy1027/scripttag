@@ -1,7 +1,7 @@
-import { ReactNode, type DetailedHTMLProps, type HTMLAttributes } from "react";
+import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 
-type SectionProps = DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> & {
+type SectionProps = {
   children: ReactNode;
   className?: string;
 };
