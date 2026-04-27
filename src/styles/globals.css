@@ -74,7 +74,7 @@
 
   /* TYPOGRAPHY */
   --font-primary: var(--font-jost);
-  --font-secondary: var(--font-poppins);
+  --font-secondary: var(--font-urbanist);
 
   --text-caption-xs: var(--text-size-xs);
   --text-caption-sm: var(--text-size-sm);

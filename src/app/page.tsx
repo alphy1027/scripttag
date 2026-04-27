@@ -13,6 +13,7 @@ import TrackingPoints from "./home/sections/tracking-points/TrackingPoints";
 import FaqSection from "./home/sections/faq/FaqSection";
 import { faqSchema, servicesSchema } from "./home/sections/json-ld/json-ld-data";
 import { JsonLd } from "@/components/shared/JsonLd";
+import Projects from "./home/sections/projects/Projects";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
           <TrackingPoints />
           <ValuePoint />
           <Services />
+          <Projects />
           <Reasons />
           <WorkingProcess />
           <ContactForm />

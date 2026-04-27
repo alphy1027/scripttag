@@ -21,7 +21,7 @@ export default function ActionSection() {
           <div className="stroke-primary-foreground rounded-full p-2 bg-primary">
             <ActionCall />
           </div>
-          <span className="font-semibold px-3">Call us now!</span>
+          <span className="font-medium px-3">Call us now!</span>
         </a>
       </SectionWrapper>
     </div>

@@ -4,7 +4,7 @@ import { H5, P } from "@/components/ui/Typography";
 
 export default function ValuePoint() {
   return (
-    <SectionWrapper className="flex flex-col md:flex-row gap-4 md:gap-6">
+    <SectionWrapper className="flex flex-col md:flex-row gap-4 md:gap-10">
       <SectionHeading>Is your business missing opportunities online?</SectionHeading>
       <div className="md:w-2/3 flex flex-col gap-2">
         <P>

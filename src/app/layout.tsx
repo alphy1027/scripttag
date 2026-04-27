@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Jost } from "next/font/google";
+import { Jost, Urbanist } from "next/font/google";
 import "@/styles/globals.css";
 import { generateSEO } from "@/lib/seo";
 import { Toaster } from "sonner";
@@ -7,8 +7,8 @@ import WhatsappFixedIcon from "@/components/shared/WhatsappFixedIcon";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { organizationSchema, websiteSchema } from "./home/sections/json-ld/json-ld-data";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const urbanist = Urbanist({
+  variable: "--font-urbanist",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
@@ -48,7 +48,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="min-h-screen">
-      <body className={`${poppins.variable} ${jost.variable} antialiased min-h-screen flex flex-col`}>
+      <body className={`${urbanist.variable} ${jost.variable} antialiased min-h-screen flex flex-col`}>
         {/* Organization */}
         <JsonLd data={organizationSchema} />
         {/* Website */}
