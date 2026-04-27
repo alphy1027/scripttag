@@ -8,7 +8,7 @@ export default function ProjectsCarousel() {
       <CarouselContent className="w-fit max-w-125">
         {projects.map((project) => (
           <CarouselItem key={project.id} className="">
-            <ProjectCard description={project.description} src={project.image} title={project.title} />
+            <ProjectCard project={project} />
           </CarouselItem>
         ))}
       </CarouselContent>

@@ -14,18 +14,21 @@ import MobileNavLink from "./components/MobileNavLink";
 import { Menu, XIcon } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import Copyright from "@/components/shared/Copyright";
+import Badge from "@/components/shared/Badge";
 
 export default function MobileNav() {
   return (
     <Sheet>
       <SheetTrigger asChild>
         <Button variant="ghost">
-          <Menu className="size-6" />
+          <Menu className="size-6 text-primary-foreground" />
         </Button>
       </SheetTrigger>
       <SheetContent showCloseButton={false} side="left" className="p-4 justify-between">
         <SheetHeader className="flex-row items-center p-0 justify-between">
-          <SheetTitle className="font-bold">LOGO</SheetTitle>
+          <SheetTitle asChild>
+            <Badge className="text-primary" />
+          </SheetTitle>
           <SheetDescription className="sr-only">
             Make changes to your profile here. Click save when you&apos;re done.
           </SheetDescription>
@@ -40,7 +43,7 @@ export default function MobileNav() {
             {navLinks.map((navLink) => (
               <li key={navLink.label} className="">
                 <SheetClose asChild>
-                  <MobileNavLink href={navLink.to} label={navLink.label} />
+                  <MobileNavLink href={`#${navLink.to}`} label={navLink.label} />
                 </SheetClose>
               </li>
             ))}

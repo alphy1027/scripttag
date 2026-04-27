@@ -2,6 +2,7 @@ import NavLink from "./components/NavLink";
 
 export const navLinks = [
   { to: "services", label: "Services" },
+  { to: "projects", label: "Projects" },
   { to: "process", label: "Process" },
   { to: "contact", label: "Contact us" },
 ];

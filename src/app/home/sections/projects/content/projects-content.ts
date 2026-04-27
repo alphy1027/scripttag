@@ -39,7 +39,7 @@ export const projects: Project[] = [
         href: "https://github.com/alphy1027/air-stream",
       },
       {
-        label: "web",
+        label: "live demo",
         icon: WebIcon,
         href: "https://www.airstreamke.co.ke/",
       },
@@ -57,7 +57,7 @@ export const projects: Project[] = [
       {
         label: "figma",
         icon: FigmaIcon,
-        href: "https://github.com/alphy1027/fralon-peanuts-app-backend",
+        href: "https://www.figma.com/design/1qoXQpgzS69ugJAEX3tIZ9/alphy.dev-portfolio?t=WQGbaKkWsJ9LujIy-1",
       },
       {
         label: "github",
@@ -65,7 +65,7 @@ export const projects: Project[] = [
         href: "https://github.com/alphy1027/fralon-peanuts-app-backend",
       },
       {
-        label: "web",
+        label: "live demo",
         icon: WebIcon,
         href: "https://kavijoy-safari-resort.netlify.app",
       },
@@ -73,14 +73,14 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Alphy1027",
+    title: "Star Auto Cars",
     image: "/images/star-auto-cars_img.png",
     stack: "frontend",
     description:
-      "A modern, responsive portfolio website built with Next.js and Tailwind CSS. Features project previews, resume links,  skills, and ways to get in touch.",
+      "A basic website for car repair and spare parts shop specializing in mercedes-benz to showcase their services to potential clients",
     tags: ["Next JS", "React JS", "Tailwind CSS", "Typescript"],
     actions: [
-      {
+      /* {
         label: "figma",
         icon: FigmaIcon,
         href: "https://www.figma.com/design/1qoXQpgzS69ugJAEX3tIZ9/alphy.dev-portfolio?t=WQGbaKkWsJ9LujIy-1",
@@ -89,11 +89,37 @@ export const projects: Project[] = [
         label: "github",
         icon: GithubIcon,
         href: "https://github.com/alphy1027/air-stream",
-      },
+      }, */
       {
-        label: "web",
+        label: "live demo",
         icon: WebIcon,
         href: "https://dev-portfolio-tawny-omega.vercel.app/",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Yoga Studio",
+    image: "/images/yoga-flow_img.png",
+    stack: "frontend",
+    description:
+      "The Yoga Flow website is a modern, user-friendly platform designed to offer a seamless experience for yoga enthusiasts.",
+    tags: ["Next JS", "React JS", "Tailwind CSS", "Typescript"],
+    actions: [
+      /* {
+        label: "figma",
+        icon: FigmaIcon,
+        href: "https://www.figma.com/design/1qoXQpgzS69ugJAEX3tIZ9/alphy.dev-portfolio?t=WQGbaKkWsJ9LujIy-1",
+      }, 
+      {
+        label: "github",
+        icon: GithubIcon,
+        href: "https://github.com/DonFredi/YogaStudio",
+      },*/
+      {
+        label: "live demo",
+        icon: WebIcon,
+        href: "https://yogalandingpage.netlify.app/",
       },
     ],
   },
