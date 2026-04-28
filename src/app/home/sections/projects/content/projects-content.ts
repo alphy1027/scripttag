@@ -149,6 +149,32 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    id: 6,
+    title: "Zycure Pharmacy",
+    image: "/images/zycure-pharmacy_img.png",
+    stack: "frontend",
+    description:
+      "This is a modern, responsive web application designed to simplify access to healthcare products and services online.",
+    tags: ["React", "NextJs", "Tailwind CSS", "Typescript", "Axios", "Tanstack Query", "Framer Motion"],
+    actions: [
+      {
+        label: "figma",
+        icon: FigmaIcon,
+        href: "https://www.figma.com/design/kJYDGdfkF29EkeNqclm6sF/Fralon-Design?node-id=0-1&t=IZ5zKkdzV6P1QN66-1",
+      },
+      {
+        label: "github",
+        icon: GithubIcon,
+        href: "https://github.com/DonFredi/zycure-pharmacy",
+      },
+      {
+        label: "demo",
+        icon: WebIcon,
+        href: "https://zycure-pharmacy.vercel.app/",
+      },
+    ],
+  },
   /* {
     id: 4,
     title: "Fralon Peanuts",
