@@ -12,7 +12,7 @@ export default function Projects() {
           <P className="text-muted">Real websites built to help businesses grow</P>
         </div>
       </SectionWrapper>
-      <div className="w-[94%] md:w-[90%] ml-auto">
+      <div className="pl-4 sm:pl-6 lg:pl-8">
         <ProjectsCarousel />
       </div>
     </section>

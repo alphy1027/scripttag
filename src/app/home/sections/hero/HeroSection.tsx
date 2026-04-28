@@ -1,7 +1,8 @@
+"use client";
 import SectionWrapper from "@/components/shared/SectionWrapper";
-import { Button } from "@/components/ui/button";
 import { H1, P } from "@/components/ui/Typography";
 import HeroIcon from "./icons/HeroIcon";
+import HeroPrimaryBtn from "./components/HeroPrimaryBtn";
 
 export default function HeroSection() {
   return (
@@ -15,7 +16,7 @@ export default function HeroSection() {
             We design and develop fast, modern, and mobile-friendly websites for small and growing businesses in Kenya.
           </P>
           <div className="flex items-center gap-4 sm:gap-6">
-            <Button variant="secondary">Plan your website</Button>
+            <HeroPrimaryBtn />
 
             <a href="#services" className="border border-secondary text-secondary bg-transparent py-3 px-6 font-medium">
               Our Services

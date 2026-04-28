@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard";
 export default function ProjectsCarousel() {
   return (
     <Carousel className="flex flex-col gap-6">
-      <CarouselContent className="w-fit max-w-125">
+      <CarouselContent className="max-w-105 sm:max-w-125">
         {projects.map((project) => (
           <CarouselItem key={project.id} className="">
             <ProjectCard project={project} />

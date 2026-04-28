@@ -1,8 +1,8 @@
-import dynamic from "next/dynamic";
+/* import dynamic from "next/dynamic"; */
 import SectionWrapper from "../shared/SectionWrapper";
 import Navbar from "./nav/Navbar";
 import Badge from "../shared/Badge";
-const MobileNav = dynamic(() => import("./nav/MobileNav"));
+/* const MobileNav = dynamic(() => import("./nav/MobileNav")); */
 
 export default function Header() {
   return (
@@ -10,13 +10,13 @@ export default function Header() {
       <SectionWrapper className="flex items-center justify-between">
         <Badge />
 
-        <div className="text-primary-foreground hidden md:block">
+        <div className="text-primary-foreground">
           <Navbar />
         </div>
-
+        {/* 
         <div className="md:hidden">
           <MobileNav />
-        </div>
+        </div> */}
       </SectionWrapper>
     </header>
   );

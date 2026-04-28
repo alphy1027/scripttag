@@ -39,7 +39,7 @@ export const projects: Project[] = [
         href: "https://github.com/alphy1027/air-stream",
       },
       {
-        label: "live demo",
+        label: "demo",
         icon: WebIcon,
         href: "https://www.airstreamke.co.ke/",
       },
@@ -65,7 +65,7 @@ export const projects: Project[] = [
         href: "https://github.com/alphy1027/fralon-peanuts-app-backend",
       },
       {
-        label: "live demo",
+        label: "demo",
         icon: WebIcon,
         href: "https://kavijoy-safari-resort.netlify.app",
       },
@@ -91,9 +91,9 @@ export const projects: Project[] = [
         href: "https://github.com/alphy1027/air-stream",
       }, */
       {
-        label: "live demo",
+        label: "demo",
         icon: WebIcon,
-        href: "https://dev-portfolio-tawny-omega.vercel.app/",
+        href: "https://star-auto-cars.netlify.app/",
       },
     ],
   },
@@ -117,9 +117,35 @@ export const projects: Project[] = [
         href: "https://github.com/DonFredi/YogaStudio",
       },*/
       {
-        label: "live demo",
+        label: "demo",
         icon: WebIcon,
         href: "https://yogalandingpage.netlify.app/",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Airstream Ad Page",
+    image: "/images/airstream-lead-gen_img.png",
+    stack: "frontend",
+    description:
+      "This is an advertisement landing page for the airstream project, specifically focused on conversion of leads",
+    tags: ["React", "Tailwind CSS", "Typescript", "Axios", "Tanstack Query", "Framer Motion"],
+    actions: [
+      {
+        label: "figma",
+        icon: FigmaIcon,
+        href: "https://www.figma.com/design/kJYDGdfkF29EkeNqclm6sF/Fralon-Design?node-id=0-1&t=IZ5zKkdzV6P1QN66-1",
+      },
+      {
+        label: "github",
+        icon: GithubIcon,
+        href: "https://github.com/alphy1027/fralon-peanuts-app",
+      },
+      {
+        label: "demo",
+        icon: WebIcon,
+        href: "https://www.airstreamke.co.ke/ac-repair-nairobi",
       },
     ],
   },

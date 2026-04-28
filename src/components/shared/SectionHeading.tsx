@@ -3,5 +3,5 @@ import { H2 } from "../ui/Typography";
 import { twMerge } from "tailwind-merge";
 
 export default function SectionHeading({ children, className }: { children: ReactNode; className?: string }) {
-  return <H2 className={twMerge("font-secondary", className)}>{children}</H2>;
+  return <H2 className={twMerge("font-secondary font-bold", className)}>{children}</H2>;
 }
