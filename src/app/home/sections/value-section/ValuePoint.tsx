@@ -14,7 +14,7 @@ export default function ValuePoint() {
         <P>This makes it harder for customers to find you, trust your business, or even contact you.</P>
         <P>In a world where most people search online first, this means lost opportunities every day.</P>
         <H5>
-          At ScriptTag, we help you fix that. We build modern, fast, and professional websites that make your business
+          At ScriptTagg, we help you fix that. We build modern, fast, and professional websites that make your business
           stand out, build trust, and help you grow online.
         </H5>
       </div>
